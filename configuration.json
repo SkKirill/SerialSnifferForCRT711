@@ -1,0 +1,8 @@
+{
+    "PortSnifferConfigurations": [
+        {
+            "SerialPortName": "/dev/ttyUSB0", 
+            "Description": "CardP"
+        }
+    ]
+}
