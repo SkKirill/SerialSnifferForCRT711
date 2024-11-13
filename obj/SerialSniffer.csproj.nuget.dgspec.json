@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/sk-kirill/RiderProjects/SerialSniffer/SerialSniffer.csproj": {}
+    "C:\\Users\\kirux\\OneDrive\\Рабочий стол\\New folder\\SerialSniffer.csproj": {}
   },
   "projects": {
-    "/home/sk-kirill/RiderProjects/SerialSniffer/SerialSniffer.csproj": {
+    "C:\\Users\\kirux\\OneDrive\\Рабочий стол\\New folder\\SerialSniffer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/sk-kirill/RiderProjects/SerialSniffer/SerialSniffer.csproj",
+        "projectUniqueName": "C:\\Users\\kirux\\OneDrive\\Рабочий стол\\New folder\\SerialSniffer.csproj",
         "projectName": "SerialSniffer",
-        "projectPath": "/home/sk-kirill/RiderProjects/SerialSniffer/SerialSniffer.csproj",
-        "packagesPath": "/home/sk-kirill/.nuget/packages/",
-        "outputPath": "/home/sk-kirill/RiderProjects/SerialSniffer/obj/",
+        "projectPath": "C:\\Users\\kirux\\OneDrive\\Рабочий стол\\New folder\\SerialSniffer.csproj",
+        "packagesPath": "C:\\Users\\kirux\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kirux\\OneDrive\\Рабочий стол\\New folder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/sk-kirill/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\kirux\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,7 +34,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net7.0": {
@@ -58,12 +66,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/sk-kirill/.dotnet/sdk/8.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.2.24474.11\\RuntimeIdentifierGraph.json"
         }
       }
     }
