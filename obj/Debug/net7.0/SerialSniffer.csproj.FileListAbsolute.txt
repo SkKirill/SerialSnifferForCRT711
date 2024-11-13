@@ -1,24 +1,49 @@
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\bin\Debug\net7.0\SerialSniffer.exe
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\bin\Debug\net7.0\SerialSniffer.deps.json
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\bin\Debug\net7.0\SerialSniffer.runtimeconfig.json
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\bin\Debug\net7.0\SerialSniffer.dll
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\bin\Debug\net7.0\SerialSniffer.pdb
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\bin\Debug\net7.0\System.IO.Ports.dll
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\bin\Debug\net7.0\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\bin\Debug\net7.0\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\bin\Debug\net7.0\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\bin\Debug\net7.0\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\bin\Debug\net7.0\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\bin\Debug\net7.0\runtimes\unix\lib\net7.0\System.IO.Ports.dll
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.IO.Ports.dll
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\obj\Debug\net7.0\SerialSniffer.csproj.AssemblyReference.cache
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\obj\Debug\net7.0\SerialSniffer.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\obj\Debug\net7.0\SerialSniffer.AssemblyInfoInputs.cache
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\obj\Debug\net7.0\SerialSniffer.AssemblyInfo.cs
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\obj\Debug\net7.0\SerialSniffer.csproj.CoreCompileInputs.cache
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\obj\Debug\net7.0\SerialSn.37976188.Up2Date
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\obj\Debug\net7.0\SerialSniffer.dll
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\obj\Debug\net7.0\refint\SerialSniffer.dll
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\obj\Debug\net7.0\SerialSniffer.pdb
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\obj\Debug\net7.0\SerialSniffer.genruntimeconfig.cache
-C:\Users\kirux\OneDrive\Рабочий стол\New folder\obj\Debug\net7.0\ref\SerialSniffer.dll
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/bin/Debug/net7.0/SerialSniffer.exe
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/bin/Debug/net7.0/SerialSniffer.deps.json
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/bin/Debug/net7.0/SerialSniffer.runtimeconfig.json
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/bin/Debug/net7.0/SerialSniffer.dll
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/bin/Debug/net7.0/SerialSniffer.pdb
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/bin/Debug/net7.0/System.IO.Ports.dll
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/bin/Debug/net7.0/runtimes/linux-arm/native/libSystem.IO.Ports.Native.so
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/bin/Debug/net7.0/runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/bin/Debug/net7.0/runtimes/linux-x64/native/libSystem.IO.Ports.Native.so
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/bin/Debug/net7.0/runtimes/osx-arm64/native/libSystem.IO.Ports.Native.dylib
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/bin/Debug/net7.0/runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/bin/Debug/net7.0/runtimes/unix/lib/net7.0/System.IO.Ports.dll
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.IO.Ports.dll
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/obj/Debug/net7.0/SerialSniffer.csproj.AssemblyReference.cache
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/obj/Debug/net7.0/SerialSniffer.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/obj/Debug/net7.0/SerialSniffer.AssemblyInfoInputs.cache
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/obj/Debug/net7.0/SerialSniffer.AssemblyInfo.cs
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/obj/Debug/net7.0/SerialSniffer.csproj.CoreCompileInputs.cache
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/obj/Debug/net7.0/SerialSn.37976188.Up2Date
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/obj/Debug/net7.0/SerialSniffer.dll
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/obj/Debug/net7.0/refint/SerialSniffer.dll
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/obj/Debug/net7.0/SerialSniffer.pdb
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/obj/Debug/net7.0/SerialSniffer.genruntimeconfig.cache
+C:/Users/kirux/OneDrive/Рабочий стол/New folder/obj/Debug/net7.0/ref/SerialSniffer.dll
+/home/sk-kirill/RiderProjects/SerialSniffer/bin/Debug/net7.0/SerialSniffer
+/home/sk-kirill/RiderProjects/SerialSniffer/bin/Debug/net7.0/SerialSniffer.deps.json
+/home/sk-kirill/RiderProjects/SerialSniffer/bin/Debug/net7.0/SerialSniffer.runtimeconfig.json
+/home/sk-kirill/RiderProjects/SerialSniffer/bin/Debug/net7.0/SerialSniffer.dll
+/home/sk-kirill/RiderProjects/SerialSniffer/bin/Debug/net7.0/SerialSniffer.pdb
+/home/sk-kirill/RiderProjects/SerialSniffer/bin/Debug/net7.0/System.IO.Ports.dll
+/home/sk-kirill/RiderProjects/SerialSniffer/bin/Debug/net7.0/runtimes/linux-arm/native/libSystem.IO.Ports.Native.so
+/home/sk-kirill/RiderProjects/SerialSniffer/bin/Debug/net7.0/runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so
+/home/sk-kirill/RiderProjects/SerialSniffer/bin/Debug/net7.0/runtimes/linux-x64/native/libSystem.IO.Ports.Native.so
+/home/sk-kirill/RiderProjects/SerialSniffer/bin/Debug/net7.0/runtimes/osx-arm64/native/libSystem.IO.Ports.Native.dylib
+/home/sk-kirill/RiderProjects/SerialSniffer/bin/Debug/net7.0/runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib
+/home/sk-kirill/RiderProjects/SerialSniffer/bin/Debug/net7.0/runtimes/unix/lib/net7.0/System.IO.Ports.dll
+/home/sk-kirill/RiderProjects/SerialSniffer/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.IO.Ports.dll
+/home/sk-kirill/RiderProjects/SerialSniffer/obj/Debug/net7.0/SerialSniffer.csproj.AssemblyReference.cache
+/home/sk-kirill/RiderProjects/SerialSniffer/obj/Debug/net7.0/SerialSniffer.GeneratedMSBuildEditorConfig.editorconfig
+/home/sk-kirill/RiderProjects/SerialSniffer/obj/Debug/net7.0/SerialSniffer.AssemblyInfoInputs.cache
+/home/sk-kirill/RiderProjects/SerialSniffer/obj/Debug/net7.0/SerialSniffer.AssemblyInfo.cs
+/home/sk-kirill/RiderProjects/SerialSniffer/obj/Debug/net7.0/SerialSniffer.csproj.CoreCompileInputs.cache
+/home/sk-kirill/RiderProjects/SerialSniffer/obj/Debug/net7.0/SerialSniffer.sourcelink.json
+/home/sk-kirill/RiderProjects/SerialSniffer/obj/Debug/net7.0/SerialSn.37976188.Up2Date
+/home/sk-kirill/RiderProjects/SerialSniffer/obj/Debug/net7.0/SerialSniffer.dll
+/home/sk-kirill/RiderProjects/SerialSniffer/obj/Debug/net7.0/refint/SerialSniffer.dll
+/home/sk-kirill/RiderProjects/SerialSniffer/obj/Debug/net7.0/SerialSniffer.pdb
+/home/sk-kirill/RiderProjects/SerialSniffer/obj/Debug/net7.0/SerialSniffer.genruntimeconfig.cache
+/home/sk-kirill/RiderProjects/SerialSniffer/obj/Debug/net7.0/ref/SerialSniffer.dll

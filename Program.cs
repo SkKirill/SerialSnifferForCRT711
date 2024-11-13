@@ -1,4 +1,6 @@
-﻿using System.IO.Ports;
+﻿using System.Globalization;
+using System.IO.Ports;
+using SerialSniffer;
 
 internal class Program
 {
@@ -12,15 +14,68 @@ internal class Program
     private const int ValueData = 0x00; //
     private const int ValueETX = 0x00; //
     private const int ValueBCC = 0x00; //
-    
-    
-    
+
+
     private static readonly int[] BaudRates = { 9600, 19200, 38400, 57600 };
     private const string SerialPortName = "/dev/ttyUSB0";
 
     public static async Task Main(string[] args)
     {
-        await MethodIoPorts();
+        UInt32 Hdle = 0;
+        
+        Hdle = DllClass.CommOpen(SerialPortName);
+        
+        if (Hdle != 0)
+        {
+            Console.WriteLine("Comm. Port is Opened");
+        }
+        else
+        {
+            Console.WriteLine("Open Comm. Port Error");
+        }
+
+
+        if (Hdle != 0)
+        {
+            byte Addr;
+            byte Cm, Pm;
+            UInt16 TxDataLen, RxDataLen;
+            byte[] TxData = new byte[1024];
+            byte[] RxData = new byte[1024];
+            byte ReType = 0;
+            byte St0, St1, St2;
+
+            Cm = 0x30;
+            Pm = 0x34;
+            St0 = St1 = St2 = 0;
+            TxDataLen = 0;
+            RxDataLen = 0;
+
+            Addr = (byte)(byte.Parse("01".Substring(0, 2), NumberStyles.Number));
+            int i = DllClass.ExecuteCommand(Hdle, Addr, Cm, Pm, TxDataLen, TxData, ref ReType, ref St0, ref St1,
+                ref St2, ref RxDataLen, RxData);
+            if (i == 0)
+            {
+                if (ReType == 0x50)
+                {
+                    Console.WriteLine("INITIALIZE OK" + "\r\n" + "Status Code : " + (char)St0 + (char)St1 + (char)St2);
+                }
+                else
+                {
+                    Console.WriteLine("INITIALIZE ERROR" + "\r\n" + "Error Code:  " + (char)St1 + (char)St2);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Communication Error");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Comm. port is not Opened");
+        }
+
+        //await MethodIoPorts();
     }
 
     private static async Task MethodIoPorts()
