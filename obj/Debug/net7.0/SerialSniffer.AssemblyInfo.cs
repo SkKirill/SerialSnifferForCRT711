@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SerialSniffer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac1b77015f1a183bf05358aab652483657689c01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9468432e4cc2955e95f7fd5baebbdac1eee4f977")]
 [assembly: System.Reflection.AssemblyProductAttribute("SerialSniffer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SerialSniffer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

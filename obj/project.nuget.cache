@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fmI16Oipqogn43AcB2bNl3S7jXT36udUtouvxazkeQoyR8kANROMHmst3ruri9cg4W0XMNXURlobOQQa9e6aQw==",
+  "dgSpecHash": "JGKGYEKa0b0=",
   "success": true,
-  "projectFilePath": "/home/sk-kirill/RiderProjects/SerialSniffer/SerialSniffer.csproj",
+  "projectFilePath": "/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSniffer.csproj",
   "expectedPackageFiles": [
     "/home/sk-kirill/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/home/sk-kirill/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",

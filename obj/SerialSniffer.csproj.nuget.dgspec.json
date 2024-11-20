@@ -1,18 +1,19 @@
 {
   "format": 1,
   "restore": {
-    "/home/sk-kirill/RiderProjects/SerialSniffer/SerialSniffer.csproj": {}
+    "/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSniffer.csproj": {}
   },
   "projects": {
-    "/home/sk-kirill/RiderProjects/SerialSniffer/SerialSniffer.csproj": {
+    "/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSniffer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/sk-kirill/RiderProjects/SerialSniffer/SerialSniffer.csproj",
+        "projectUniqueName": "/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSniffer.csproj",
         "projectName": "SerialSniffer",
-        "projectPath": "/home/sk-kirill/RiderProjects/SerialSniffer/SerialSniffer.csproj",
+        "projectPath": "/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSniffer.csproj",
         "packagesPath": "/home/sk-kirill/.nuget/packages/",
-        "outputPath": "/home/sk-kirill/RiderProjects/SerialSniffer/obj/",
+        "outputPath": "/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/obj/",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/home/sk-kirill/.nuget/NuGet/NuGet.Config"
         ],
@@ -32,6 +33,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -63,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/sk-kirill/.dotnet/sdk/8.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/sk-kirill/.dotnet/sdk/8.0.404/RuntimeIdentifierGraph.json"
         }
       }
     }
