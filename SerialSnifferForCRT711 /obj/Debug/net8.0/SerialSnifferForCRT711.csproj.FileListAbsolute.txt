@@ -1,0 +1,15 @@
+/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /bin/Debug/net8.0/SerialSnifferForCRT711
+/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /bin/Debug/net8.0/SerialSnifferForCRT711.deps.json
+/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /bin/Debug/net8.0/SerialSnifferForCRT711.runtimeconfig.json
+/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /bin/Debug/net8.0/SerialSnifferForCRT711.dll
+/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /bin/Debug/net8.0/SerialSnifferForCRT711.pdb
+/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /obj/Debug/net8.0/SerialSnifferForCRT711.GeneratedMSBuildEditorConfig.editorconfig
+/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /obj/Debug/net8.0/SerialSnifferForCRT711.AssemblyInfoInputs.cache
+/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /obj/Debug/net8.0/SerialSnifferForCRT711.AssemblyInfo.cs
+/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /obj/Debug/net8.0/SerialSnifferForCRT711.csproj.CoreCompileInputs.cache
+/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /obj/Debug/net8.0/SerialSnifferForCRT711.sourcelink.json
+/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /obj/Debug/net8.0/SerialSnifferForCRT711.dll
+/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /obj/Debug/net8.0/refint/SerialSnifferForCRT711.dll
+/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /obj/Debug/net8.0/SerialSnifferForCRT711.pdb
+/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /obj/Debug/net8.0/SerialSnifferForCRT711.genruntimeconfig.cache
+/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /obj/Debug/net8.0/ref/SerialSnifferForCRT711.dll
