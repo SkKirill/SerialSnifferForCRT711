@@ -13,3 +13,5 @@
 /home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /obj/Debug/net8.0/SerialSnifferForCRT711.pdb
 /home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /obj/Debug/net8.0/SerialSnifferForCRT711.genruntimeconfig.cache
 /home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /obj/Debug/net8.0/ref/SerialSnifferForCRT711.dll
+/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /obj/Debug/net8.0/SerialSnifferForCRT711.csproj.AssemblyReference.cache
+/home/sk-kirill/RiderProjects/SerialSnifferForCRT711/SerialSnifferForCRT711 /obj/Debug/net8.0/SerialSn.1A046B1A.Up2Date
