@@ -1,4 +1,7 @@
-[CRT-711-V1.0 Communication Protocol .pdf](https://github.com/user-attachments/files/17846515/CRT-711-V1.0.Communication.Protocol.pdf)# CRT 711
+> Дока:
+[CRT-711-V1.0 Communication Protocol .pdf](https://github.com/user-attachments/files/17846515/CRT-711-V1.0.Communication.Protocol.pdf)
+
+# CRT 711
 
 > [!WARNING]  
 > Такая пометка в местах где я имел сомнение в чем-то или есть несостыковка с мануалом выявленная в ходе проверки
