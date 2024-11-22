@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SerialSnifferForCRT711")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ec0208ae0101ac01d33a26454e7ef23bfb140d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02411eb9a563e44d0aa5fadd67f4a60ecf7b886b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SerialSnifferForCRT711")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SerialSnifferForCRT711")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -73,6 +73,7 @@ public static class Program
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Не было получено ответа от устройства!\n");
+            Console.ResetColor();
             return;
         }
 
