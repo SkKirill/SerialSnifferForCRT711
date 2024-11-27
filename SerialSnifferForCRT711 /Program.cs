@@ -14,24 +14,20 @@ public static class Program
             if (OpenPort(out var port))
                 return;
             
-            //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandInitialize34));PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandCardEntry30));
+            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandInitialize34));
+            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandCardEntryEnable));
+            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandStatusRequestWithSensor));
+            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandErrorCardBinCounterSet));
+            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandEjectCardCounterSet));
+            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandErrorCardBinCounterRead));
+            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandEjectCardCounterRead));
+            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandReadMachineConfigInformation));
             
-            //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandStatusRequest31));
+            
             //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandRfidCardType));
             //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandRfidCardControl1356MHz32));
+            //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandCardMove33));
             
-            //await ExecuteByteCommand(port, CommandListInfo.CommandCardMove33);
-            
-            
-            
-            //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandReadMachineConfigInformation));
-            
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandErrorCardBinCounter31));
-            
-            //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandErrorCardBinCounter30));
-            
-            //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandEjectCardCounter30));
-
             port.Close();
         }
         catch (Exception exception)
