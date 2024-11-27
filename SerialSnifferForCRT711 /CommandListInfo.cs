@@ -175,7 +175,7 @@ public static class CommandListInfo
     );
     public static readonly ByteCommand CommandErrorCardBinCounter31 = new(
         "4.11.2 Set initial value of error-card bin PM=0x31 Count=0x00, 0x00, 0x00",
-        [ValueStx, ValueAddr, 0x00, 0x06, ValueCmt, 0xA5, 0x31, 0x00, 0x00, 0x01, ValueEtx, 0x00]
+        [ValueStx, ValueAddr, 0x00, 0x06, ValueCmt, 0xA5, 0x31, 0x30, 0x30, 0x30, ValueEtx, 0x00]
     );
     public static readonly ByteCommand CommandEjectCardCounter30 = new(
         "4.12.1 Read eject card counter PM=0x30",

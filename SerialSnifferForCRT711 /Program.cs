@@ -14,49 +14,23 @@ public static class Program
             if (OpenPort(out var port))
                 return;
             
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandInitialize30));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandInitialize31));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandInitialize33));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandInitialize34));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandInitialize35));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandInitialize37));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandStatusRequest30));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandStatusRequest31));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandCardMove30));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandCardMove33));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandCardMove39));
-
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandCardEntry30));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandCardEntry31));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandRfidCardType));
-
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandSamCardControl3030));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandSamCardControl3033));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandSamCardControl3035));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandSamCardControl32));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandSamCardControl31));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandSamCardControl33));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandSamCardControl34));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandSamCardControl38));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandSamCardControl39));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandSamCardControl4030));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandSamCardControl4031));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandSamCardControl4032));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandSamCardControl4033));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandRfidCardControl1356MHz30));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandRfidCardControl1356MHz31));
-
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandRfidCardControl1356MHz32));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandRfidCardControl1356MHz3930));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandRfidCardControl1356MHz3931));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandBarcodeScan));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandReadMachineConfigInformation));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandReadMachineVersion30));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandReadMachineVersion31));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandErrorCardBinCounter30));
+            //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandInitialize34));PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandCardEntry30));
+            
+            //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandStatusRequest31));
+            //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandRfidCardType));
+            //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandRfidCardControl1356MHz32));
+            
+            //await ExecuteByteCommand(port, CommandListInfo.CommandCardMove33);
+            
+            
+            
+            //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandReadMachineConfigInformation));
+            
             PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandErrorCardBinCounter31));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandEjectCardCounter30));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandEjectCardCounter31));
+            
+            //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandErrorCardBinCounter30));
+            
+            //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandEjectCardCounter30));
 
             port.Close();
         }
@@ -135,7 +109,7 @@ public static class Program
 
             Console.ResetColor();
             Console.WriteLine();
-            await Task.Delay(300);
+            await Task.Delay(1000);
             Console.Write("Получили: ");
             List<byte> response = [];
             while (port.BytesToRead > 0)
