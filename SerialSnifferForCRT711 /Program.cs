@@ -12,7 +12,7 @@ public static class Program
             if (MainUtilities.OpenPort(out var port))
                 return;
             
-            await CommandsBeforeTurnOn(port);
+            //await CommandsBeforeTurnOn(port);
             await CommandsReadIdRfidCard(port);
 
             port.Close();

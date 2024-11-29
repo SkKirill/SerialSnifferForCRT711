@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef7b137e-eaa2-4454-bd86-7d182737c99d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerialSnifferForCRT711 /CommandListInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerialSnifferForCRT711 /CommandListInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerialSnifferForCRT711 /Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerialSnifferForCRT711 /Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SerialSnifferForCRT711 /bin/Debug/net8.0/SerialSnifferForCRT711.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SerialSnifferForCRT711 /bin/Debug/net8.0/SerialSnifferForCRT711.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SerialSnifferForCRT711 /bin/Debug/net8.0/SerialSnifferForCRT711.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SerialSnifferForCRT711 /bin/Debug/net8.0/SerialSnifferForCRT711.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SerialSnifferForCRT711 /obj/Debug/net8.0/SerialSnifferForCRT711.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerialSnifferForCRT711 /obj/Debug/net8.0/SerialSnifferForCRT711.AssemblyInfo.cs" afterDir="false" />
@@ -64,6 +61,7 @@
       <updated>1732871310344</updated>
       <workItem from="1732871311426" duration="47000" />
       <workItem from="1732871594808" duration="128000" />
+      <workItem from="1732874445999" duration="7000" />
     </task>
     <servers />
   </component>
