@@ -12,7 +12,7 @@ public static class Program
             if (MainUtilities.OpenPort(out var port))
                 return;
             
-            //await CommandsBeforeTurnOn(port);
+            await CommandsBeforeTurnOn(port);
             await CommandsReadIdRfidCard(port);
 
             port.Close();
@@ -27,9 +27,9 @@ public static class Program
     {
         PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandRfidCardStatus));
         PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandRfidCardActivation));
-        /*PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandRfidCardStatus));
+        PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandRfidCardStatus));
         PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandRfidCardDeactivation));
-        PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandRfidCardStatus));*/
+        PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandRfidCardStatus));
         await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandCardMoveToFrontWithoutHolding);
     }
 
