@@ -5,35 +5,42 @@ namespace SerialSnifferForCRT711;
 
 public static class Program
 {
-    private const string SerialPortName = "/dev/ttyUSB0";
-
     public static async Task Main(string[] args)
     {
         try
         {
-            if (OpenPort(out var port))
+            if (MainUtilities.OpenPort(out var port))
                 return;
             
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandInitialize34));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandCardEntryEnable));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandStatusRequestWithSensor));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandErrorCardBinCounterSet));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandEjectCardCounterSet));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandErrorCardBinCounterRead));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandEjectCardCounterRead));
-            PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandReadMachineConfigInformation));
-            
-            
-            //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandRfidCardType));
-            //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandRfidCardControl1356MHz32));
-            //PrintAnswer(await ExecuteByteCommand(port, CommandListInfo.CommandCardMove33));
-            
+            await CommandsBeforeTurnOn(port);
+            await CommandsReadIdRfidCard(port);
+
             port.Close();
         }
         catch (Exception exception)
         {
             Console.WriteLine(exception);
         }
+    }
+
+    private static async Task CommandsReadIdRfidCard(SerialPort port)
+    {
+        PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandRfidCardStatus));
+        PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandRfidCardActivation));
+        /*PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandRfidCardStatus));
+        PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandRfidCardDeactivation));
+        PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandRfidCardStatus));*/
+        await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandCardMoveToFrontWithoutHolding);
+    }
+
+    private static async Task CommandsBeforeTurnOn(SerialPort port)
+    {
+        PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandInitialize34));
+        await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandCardEntryEnable);
+        /*PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandStatusRequestWithSensor));
+        await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandErrorCardBinCounterSet);
+        await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandEjectCardCounterSet);
+        PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandReadMachineConfigInformation));*/
     }
 
     private static void PrintAnswer(byte[] response)
@@ -58,6 +65,13 @@ public static class Program
             Console.WriteLine("s2 = " + Encoding.ASCII.GetString(response[5..6]));
             if (response.Length > 5)
                 Console.WriteLine("data = " + Encoding.ASCII.GetString(response[6..^0]));
+            if (response.Length > 10 && response[1] == 0x60 && response[2] == 0x30)
+            {
+                Console.Write("id rfid card = ");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine(string.Join(' ', response[10..(response[9]+10)].Select(c => c.ToString("X2"))));
+                Console.ResetColor();
+            }
         }
         else
         {
@@ -69,90 +83,5 @@ public static class Program
         }
 
         Console.WriteLine();
-    }
-
-    private static bool OpenPort(out SerialPort port)
-    {
-        try
-        {
-            port = new SerialPort(SerialPortName);
-            port.Open();
-        }
-        catch (Exception exception)
-        {
-            Console.WriteLine($"Не удалось подключить порт {SerialPortName}" + exception.Message);
-            port = null!;
-            return true;
-        }
-
-        return false;
-    }
-
-    private static async Task<byte[]> ExecuteByteCommand(SerialPort port, ByteCommand byteCommand)
-    {
-        try
-        {
-            var commandData = byteCommand.Data;
-            commandData[^1] = CalculateBcc(commandData);
-            port.Write(commandData, 0, commandData.Length);
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.Write($"{byteCommand.Name} -> ");
-            foreach (var item in commandData)
-            {
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.Write($"0x{item:X2}  ");
-            }
-
-            Console.ResetColor();
-            Console.WriteLine();
-            await Task.Delay(1000);
-            Console.Write("Получили: ");
-            List<byte> response = [];
-            while (port.BytesToRead > 0)
-            {
-                Console.ForegroundColor = ConsoleColor.Green;
-                response.Add((byte)port.ReadByte());
-                Console.Write($"0x{response[^1]:X2}, ");
-                Console.ResetColor();
-            }
-
-            if (response[^1] != CalculateBcc(response.ToArray()))
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("\nОшибка: контрольная сумма(BCC) неверная!");
-                Console.ResetColor();
-            }
-            else
-            {
-                Console.WriteLine("\nКонтрольная сумма(BCC) верна!");
-                Console.ResetColor();
-            }
-
-            var answer = new byte[response[4]];
-            for (var i = 5; i < response[4] + 5 && i < response.Count; i++)
-            {
-                answer[i - 5] = response[i];
-            }
-
-            return answer;
-        }
-        catch (Exception exception)
-        {
-            Console.WriteLine($"Ошибка при отправке команды:{exception.Message}");
-            return [];
-        }
-    }
-
-    private static byte CalculateBcc(byte[] byteCommand)
-    {
-        var i = byteCommand[0] == CommandListInfo.ValueStx ? 0 : 1;
-        var valueBcc = byteCommand[i];
-        i++;
-        for (; i < byteCommand.Length - 1; i++)
-        {
-            valueBcc ^= byteCommand[i];
-        }
-
-        return valueBcc;
     }
 }
