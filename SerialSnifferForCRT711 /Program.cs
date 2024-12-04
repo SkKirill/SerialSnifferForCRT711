@@ -11,9 +11,26 @@ public static class Program
         {
             if (MainUtilities.OpenPort(out var port))
                 return;
+
+            PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandInitialize30));
             
-            await CommandsBeforeTurnOn(port);
-            await CommandsReadIdRfidCard(port);
+            PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandCardMoveToFrontWithHolding));
+            //PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo));   
+            //PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandRfidCardActivation));
+            
+            while (true)
+            {
+                PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandStatusRequest));
+                await Task.Delay(1000);
+            }
+            PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandInitialize30));
+/*
+            PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandReadMachineVersion30));
+            PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandReadMachineVersion31));
+            PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandReadMachineConfigInformation));*/
+            
+            //await CommandsBeforeTurnOn(port);
+            //await CommandsReadIdRfidCard(port);
 
             port.Close();
         }
@@ -37,10 +54,10 @@ public static class Program
     {
         PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandInitialize34));
         await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandCardEntryEnable);
-        /*PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandStatusRequestWithSensor));
+        PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandStatusRequestWithSensor));
         await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandErrorCardBinCounterSet);
         await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandEjectCardCounterSet);
-        PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandReadMachineConfigInformation));*/
+        PrintAnswer(await MainUtilities.ExecuteByteCommand(port, CommandListInfo.CommandReadMachineConfigInformation));
     }
 
     private static void PrintAnswer(byte[] response)

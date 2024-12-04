@@ -11,6 +11,7 @@ public static class MainUtilities
         try
         {
             port = new SerialPort(SerialPortName);
+            port.BaudRate = 57600;
             port.Open();
         }
         catch (Exception exception)
@@ -57,7 +58,7 @@ public static class MainUtilities
                 Console.Write($"0x{response[^1]:X2}, ");
                 Console.ResetColor();
             }
-
+            
             if (response[^1] != CalculateBcc(response.ToArray()))
             {
                 Console.ForegroundColor = ConsoleColor.Red;

@@ -5,7 +5,7 @@ public static class CommandListInfo
     public const int ValueStx = 0xF2; // Start Character
     private const int ValueAddr = 0x00; // Адрес устройства (дефолтный 15, но у нас он 0x00)
     private const int ValueCmt = 0x43; // (byte)'C' - Команда
-    private const int ValueEtx = 0x03; // End Character
+    public const int ValueEtx = 0x03; // End Character
 
     /// <summary>
     /// Команды инициализации работы с CRT
@@ -39,7 +39,7 @@ public static class CommandListInfo
         "4.1 Reset (Initialization) Command PM=0x37",
         [ValueStx, ValueAddr, 0x00, 0x03, ValueCmt, 0x30, 0x37, ValueEtx, 0x00]
     );
-
+    
     /// <summary>
     /// Команды получения статуса с CRT
     /// </summary>
